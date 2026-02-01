@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Focused Writer
 
-## Getting Started
+A distraction-free, privacy-first markdown writing application with focus mode, client-side encryption, and full offline support.
 
-First, run the development server:
+## ✨ Features
+
+- 📝 **Focus Mode**: Center your current paragraph, gray out everything else
+- 🔒 **Client-Side Encryption**: Optional AES-GCM encryption with password/biometric/TOTP
+- 📁 **File System Integration**: Choose your storage folder (Chromium browsers)
+- 🎨 **Customizable Themes**: Built-in themes + full theme editor
+- ⌨️ **Keyboard Shortcuts**: Fully customizable keyboard bindings
+- 📱 **PWA**: Install as an app, works offline
+- 📄 **PDF Export**: Export your documents to PDF
+- 🌙 **Dark Mode**: Beautiful light and dark themes
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/focused-writer.git
+cd focused-writer
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **UI Components**: shadcn/ui (Radix UI + Tailwind CSS)
+- **Encryption**: Web Crypto API
+- **Storage**: IndexedDB + File System Access API
+- **PWA**: next-pwa
 
-## Learn More
+## 📖 Documentation
 
-To learn more about Next.js, take a look at the following resources:
+- [Architecture](./docs/architecture.md)
+- [Security Model](./docs/security.md)
+- [Keyboard Shortcuts](./docs/keyboard-shortcuts.md)
+- [Theme Customization](./docs/theme-guide.md)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-## Deploy on Vercel
+## 📝 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🗺️ Roadmap
+
+### Alpha (v0.1.0 - v0.9.0)
+- [x] Project setup
+- [ ] Basic markdown editor with focus mode
+- [ ] File system integration
+- [ ] Encryption system
+- [ ] Theme customization
+- [ ] Keyboard shortcuts
+
+### Beta (v0.10.0+)
+- [ ] Performance optimization
+- [ ] Accessibility improvements
+- [ ] Mobile responsiveness
+- [ ] Cross-browser testing
+
+### v1.0.0
+- [ ] Production release
+
+## 📧 Support
+
+For questions or issues, please [open an issue](https://github.com/YOUR_USERNAME/focused-writer/issues).
+
+---
+
+**Current Version**: v0.1.0-alpha.1  
+**Status**: 🚧 In Development

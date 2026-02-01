@@ -1,0 +1,10 @@
+# API Routes
+
+This directory is reserved for future backend API routes.
+
+When we add authentication and syncing features, API routes will be added here.
+
+Example future routes:
+- `/api/auth` - Authentication endpoints
+- `/api/sync` - Document syncing endpoints
+- `/api/export` - Server-side export endpoints
