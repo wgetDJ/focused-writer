@@ -120,6 +120,52 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-mono;
   }
 }
+
+/* Custom Editor Styles */
+@layer components {
+  .splash-screen {
+    @apply fixed inset-0 z-50 flex flex-col items-center justify-center bg-background;
+    animation: fadeOut 0.5s ease-in-out 2s forwards;
+  }
+
+  .splash-title {
+    @apply text-4xl font-bold tracking-wider;
+  }
+
+  .splash-version {
+    @apply absolute bottom-8 text-sm text-muted-foreground;
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  /* Focus Mode Styles */
+  .editor-container {
+    @apply min-h-screen p-8;
+  }
+
+  .paragraph {
+    @apply mb-6 transition-opacity duration-300;
+  }
+
+  .paragraph-active {
+    @apply opacity-100;
+  }
+
+  .paragraph-inactive {
+    @apply opacity-30;
+  }
+
+  .cursor-line {
+    @apply absolute left-0 w-1 bg-blue-500 transition-all duration-200;
+    height: 1.5em;
+  }
+}
+
