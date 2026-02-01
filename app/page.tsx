@@ -1,19 +1,15 @@
 'use client';
 
 import { SplashScreen } from '@/components/ui/SplashScreen';
+import { Editor } from '@/components/editor/Editor';
 
 export default function Home() {
   return (
     <>
       <SplashScreen />
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl mb-4">Welcome to Focused Writer</h1>
-          <p className="text-muted-foreground">
-            A distraction-free markdown writing experience
-          </p>
-        </div>
-      </div>
+      <main className="min-h-screen">
+        <Editor />
+      </main>
     </>
   );
 }
